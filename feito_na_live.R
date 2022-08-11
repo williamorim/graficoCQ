@@ -122,11 +122,11 @@ tab_plot |>
   mutate(meta = 15) |>
   e_chart(x = dia_hora) |>
   e_line(serie = temperatura, symbol = "none") |>
-  e_line(serie = media, symbol = "none", lineStyle = list(color = "orange")) |>
+  e_line(serie = media, symbol = "none", lineStyle = list(color = "orange"), itemStyle = list(color = "orange")) |>
   e_line(serie = lim_acao_sup, symbol = "none", lineStyle = list(color = "red")) |>
   e_line(serie = lim_acao_inf, symbol = "none", lineStyle = list(color = "red")) |>
   e_line(serie = meta, symbol = "none", lineStyle = list(color = "royalblue")) |>
-  e_scatter(serie = flag_derrota_dia, symbolSize = 20, itemStyle = list(color = "darkgreen"))
+  e_scatter(serie = flag_derrota_dia, legend = FALSE, symbolSize = 15, itemStyle = list(color = "darkgreen"))
 
 
 
