@@ -4,7 +4,7 @@ library(echarts4r)
 
 # Import ------------------------------------------------------------------
 
-# dados: https://bdmep.inmet.gov.br/
+# dados: 20
 
 arquivos <- list.files("dados/", full.names = TRUE)
 
